@@ -1,4 +1,4 @@
 # bugshindemo
 This is my first Git Repository.
 <br>
-Author-Saidakshin
+Author-Saidakshin Sridhar
