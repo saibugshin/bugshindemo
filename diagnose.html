@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagnose</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Upload Crop Image for Diagnosis</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="crop_image" required><br>
+        <input type="submit" value="Diagnose">
+    </form>
+    {% if diagnosis %}
+        <h3>Diagnosis: {{ diagnosis }}</h3>
+        <p>Suggested Remedy: {{ remedy }}</p>
+        <img src="/uploads/{{ image }}" width="300">
+    {% endif %}
+</div>
+</body>
+</html>

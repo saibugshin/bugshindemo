@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Reports</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Submitted Reports</h2>
+    {% for report in reports %}
+        <hr>
+        <p><strong>Farmer:</strong> {{ report[1] }}</p>
+        <p><strong>Crop:</strong> {{ report[2] }}</p>
+        <p><strong>Description:</strong> {{ report[3] }}</p>
+        {% if report[4] %}
+            <img src="/{{ report[4] }}" width="200"><br>
+        {% endif %}
+        <p><strong>Date:</strong> {{ report[5] }}</p>
+    {% endfor %}
+</div>
+</body>
+</html>

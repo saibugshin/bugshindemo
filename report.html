@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Disease</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Report a New Disease Outbreak</h2>
+    <form method="POST" enctype="multipart/form-data">
+        Name: <input type="text" name="name" required><br>
+        Crop: <input type="text" name="crop" required><br>
+        Description:<br> <textarea name="description" required></textarea><br>
+        Upload Image: <input type="file" name="report_image"><br>
+        <input type="submit" value="Submit Report">
+    </form>
+</div>
+</body>
+</html>
